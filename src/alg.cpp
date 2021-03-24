@@ -1,24 +1,22 @@
 // Copyright 2021 NNTU-CS
 
 
-    int r = 0, l = size - 1, k = 0;
-    while (r < l) {
-        
-        int mid = (r + l) / 2;
-        if (arr[mid] < value)
-            r = mid + 1;
-        else
-            l = mid;
-    }
-    if (arr[r] == value) {
-        while (arr[r] == value) {
-            k++;
-            r++;
-        }
-    }
-    if (k != 0)
-        return k;
+int L = 0, R = size - 1, middle, numbers = 0;
+  while (L < R) {
+ 
+    middle = (L + R) / 2;
+    if (arr[middle] < value)
+      L = middle + 1;
     else
-        return 0;
-}
+      R = middle;
+  }
+  if (arr[L] == value) {
+    while (arr[L] == value) {
+      numbers++;
+      L++;
+    }
+  }
+  if (numbers)
+    return numbers;
+  else
  
