@@ -1,5 +1,5 @@
 // Copyright 2021 NNTU-CS
-
+int cbinsearch(int *arr, int size, int value) {
 
 int L = 0, R = size - 1, middle, numbers = 0;
   while (L < R) {
