@@ -1,7 +1,6 @@
 // Copyright 2021 NNTU-CS
 
 int cbinsearch(int *arr, int size, int value) {
- int cb(int *arr, int size, int value) {
 
   int l=0, r=size-1, mid, kol=0;
    while (l<r) {
