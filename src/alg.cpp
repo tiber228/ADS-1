@@ -6,6 +6,7 @@ int L = 0, R = size - 1, middle, numbers = 0;
  
     middle = (L + R) / 2;
     if (arr[middle] < value)
+   
       L = middle + 1;
     else
       R = middle;
